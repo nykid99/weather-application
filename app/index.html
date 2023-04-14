@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href = '../src/style/style.css' rel = "stylesheet" type = text/css>
+
+    <title>Weather App</title>
+</head>
+<body>
+    <h1>WEATHER APP</h1>
+    <span class="ico ico-mglass"></span>
+    <form id = "locationForm" onSubmit="return false">
+        <input placeholder="Enter City Name" type="text" id="locationText" name="Location" >
+        <button id = "locationSubmit"type ='submit' onclick="showValues()">
+            <img id = "magIcon" src = "../src/img/magIconBig.png"/>
+        </button> 
+    </form>
+    <div id = 'currentWeatherContainer'>
+        <div id = "primaryContainer">
+            <div>
+                
+                <div id = 'cityInfo'></div>
+                <div id = 'countryInfo'></div>
+                <div id = "mainTempAndIcon">
+                    <div id = 'mainTemp'></div>
+                    <div class="weather-icon">
+                        <img src="icons/unknown.png" />
+                    </div>
+                </div>
+                <div id = 'feelTemp'></div>
+                <div id = "primaryWeather"></div>
+
+                <div id = "sliderGroup">
+                    <div>F</div>
+                    <label id="switch">
+                        <input type="checkbox" id = "checkBox">
+                        <span class="slider"></span>
+                    </label>
+                    <div>C</div>
+                </div>
+
+            </div>
+        </div>
+        <div id = "secondaryContainer">
+            <div id = "miscHumid"></div>
+            <div id = "miscWindSpeed"></div>
+            <div id = "miscWindDirection"></div>
+            <div id = "tempMax"></div>
+            <div id = "tempMin"></div>
+        </div>
+    </div>
+</body>
+<script type = "text/javascript" src = "../src/js/script.js"></script>
+</html>
