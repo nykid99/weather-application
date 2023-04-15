@@ -66,7 +66,7 @@ function returnTemp(boolean, temperature){
 async function returnAPI(input){
     try {
 
-        const geoCode = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${input}&limit=1&appid=0a4cbe0e083fb5050695ba6fafccdaab`);
+        const geoCode = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${input}&limit=1&appid=0a4cbe0e083fb5050695ba6fafccdaab`);
         const geoData = await geoCode.json();
 
         let latty = geoData[0].lat;
@@ -80,7 +80,7 @@ async function returnAPI(input){
         let windDirection = weatherData.wind.deg;
         let humidity = weatherData.main.humidity;
         let weatherIcon = weatherData.weather[0].icon;
-        var weatherIconUrl = "http://openweathermap.org/img/wn/" + weatherIcon + "@2x.png";
+        var weatherIconUrl = "https://openweathermap.org/img/wn/" + weatherIcon + "@2x.png";
         locationIcon.innerHTML = `<img src=${weatherIconUrl}>`;
 
 
