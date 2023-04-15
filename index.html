@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link href = '../src/style/style.css' rel = "stylesheet" type = text/css>
+    <link href = './src/style/style.css' rel = "stylesheet" type = text/css>
 
     <title>Weather App</title>
 </head>
@@ -15,7 +15,7 @@
     <form id = "locationForm" onSubmit="return false">
         <input placeholder="Enter City Name" type="text" id="locationText" name="Location" >
         <button id = "locationSubmit"type ='submit' onclick="showValues()">
-            <img id = "magIcon" src = "../src/img/magIconBig.png"/>
+            <img id = "magIcon" src = "./src/img/magIconBig.png"/>
         </button> 
     </form>
     <div id = 'currentWeatherContainer'>
@@ -53,5 +53,5 @@
         </div>
     </div>
 </body>
-<script type = "text/javascript" src = "../src/js/script.js"></script>
+<script type = "text/javascript" src = "./src/js/script.js"></script>
 </html>
